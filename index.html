@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car World</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navcontainer">
+        <h1 class="contHeading">Car World<i class="fa-solid fa-car"></i></h1>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col col1 col-4">
+        <form class="storeForm" action="">
+          <table>
+            <!-- car Brand Input -->
+            <tr>
+              <td>
+                <h3 class="formHeading">Enter Details</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="carBrand">CarBrand:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="carBrand" placeholder="Car Brand" />
+              </td>
+            </tr>
+            <!-- car Price Input -->
+            <tr>
+              <td>
+                <label for="carPrice">CarPrice:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" id="carPrice" placeholder="Car Price" />
+              </td>
+            </tr>
+            <!-- Key input -->
+            <tr>
+              <td>
+                <label for="carKey">Key:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="carKey" placeholder="Key" />
+              </td>
+            </tr>
+            <!-- Key button -->
+            <tr>
+              <td>
+                <button
+                  id="storeButton"
+                  type="reset"
+                  class="btn btn-outline-success"
+                  onclick="addCar()"
+                >
+                  Store Data
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="col col2 col-4">
+        <form class="retrieveForm" action="">
+          <tr>
+            <td><h3 class="retrieveHeading">Retrieve Data</h3></td>
+          </tr>
+          <tr>
+            <td><h6 class="retrieveText">Enter key to retrieve data</h6></td>
+          </tr>
+          <tr>
+            <td><label for="keyR">Key:</label></td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <input type="text" id="keyR" placeholder="Enter Key" />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <button
+                class="btn btn-outline-primary"
+                onclick="retCar()"
+                type="reset"
+              >
+                Retrive
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <div id="result"></div>
+            </td>
+          </tr>
+        </form>
+        <button class="btn btn-outline-danger" onclick="storageClear()">Delete All Records</button>
+        <div id="result2"></div>
+      </div>
+      <div class="col col3 col-4">
+        <form class="deleteForm" action="">
+          <tr>
+            <td><h3 class="deleteHeading">Delete Data</h3></td>
+          </tr>
+          <tr>
+            <td><h6 class="deleteText">Enter key to retrieve data</h6></td>
+          </tr>
+          <tr>
+            <td><label for="keyD">Key:</label></td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <input type="text" id="keyD" placeholder="Enter Key" />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <button class="btn btn-outline-danger" type="reset"
+              onclick="delCar()">
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <div id="result1"></div>
+            </td>
+          </tr>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

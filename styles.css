@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+
+/* navbar CSS */
+
+.navcontainer{
+    background-color: cornflowerblue;
+    position: sticky;
+    z-index: 1;
+}
+
+.contHeading{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Navbar css end */
+/* row css */
+.row{
+    display: block;
+    flex-wrap: wrap;
+}
+
+/* Store Form */
+
+.col{background-color: #EEEEF8;
+    height: 100vh;
+
+}
+
+.storeForm{
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+.formHeading{
+    text-align: center;
+}
+
+label{
+    margin-top: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+#carBrand,#carPrice,#carKey{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Retrive Form */
+.retrieveForm{
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+    height: 388px;
+}
+
+.retrieveHeading{
+    text-align: center;
+}
+
+.retrieveText{
+    text-align: center;
+}
+
+#keyR{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 3px;
+
+}
+
+
+.deleteForm{
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+    height: 388px;
+}
+
+#keyD{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 3px;
+
+}
+
+.deleteHeading{
+    text-align: center;
+}
+
+.deleteText{
+    text-align: center;
+}

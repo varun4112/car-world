@@ -7,6 +7,11 @@
     
 }
 
+body{
+    background-color: #EEEEF8 !important;
+    height: 100vh;
+}
+
 
 /* navbar CSS */
 
@@ -25,15 +30,17 @@
 
 /* Navbar css end */
 /* row css */
-.row{
-    display: block;
+.row1{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* Store Form */
 
 .col{background-color: #EEEEF8;
-    height: 100vh;
+    height: auto;
+    width: 33%;
 
 }
 
@@ -119,4 +126,9 @@ table{
 
 .deleteText{
     text-align: center;
+}
+
+.delbtn{
+    width: 70%;
+    margin-left: 15%;
 }

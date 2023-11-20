@@ -102,6 +102,8 @@ table{
 
 }
 
+/* delete form */
+
 
 .deleteForm{
     background-color: white;
@@ -127,6 +129,8 @@ table{
 .deleteText{
     text-align: center;
 }
+
+/* delete button */
 
 .delbtn{
     width: 70%;
